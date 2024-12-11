@@ -14,8 +14,8 @@ class Profanity < Formula
     depends_on "libtool" => :build
   end
 
-  depends_on "libsignal-protocol-c" => :build
   depends_on "libomemo-c" => :build
+  depends_on "libsignal-protocol-c" => :build
   depends_on "pkgconf" => :build
 
   depends_on "curl"
