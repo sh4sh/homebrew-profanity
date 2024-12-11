@@ -63,4 +63,3 @@ class Profanity < Formula
     system bin/"profanity", "-v"
   end
 end
-
