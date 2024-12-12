@@ -17,6 +17,7 @@ class ProfanityE2e < Formula
   depends_on "libomemo-c" => :build
   depends_on "libsignal-protocol-c" => :build
   depends_on "pkgconf" => :build
+  depends_on "terminal-notifier" => :build
 
   depends_on "curl"
   depends_on "glib"
