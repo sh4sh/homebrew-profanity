@@ -1,4 +1,4 @@
-class Profanity < Formula
+class ProfanityE2e < Formula
   desc "Console based XMPP client"
   homepage "https://profanity-im.github.io"
   url "https://profanity-im.github.io/tarballs/profanity-0.14.0.tar.gz"
