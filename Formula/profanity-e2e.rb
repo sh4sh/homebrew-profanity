@@ -14,10 +14,8 @@ class ProfanityE2e < Formula
     depends_on "libtool" => :build
   end
 
-  depends_on "libomemo-c" => :build
   depends_on "libsignal-protocol-c" => :build
   depends_on "pkgconf" => :build
-  depends_on "terminal-notifier" => :build
 
   depends_on "curl"
   depends_on "glib"
@@ -52,12 +50,10 @@ class ProfanityE2e < Formula
                           "--enable-c-plugins",
                           "--enable-plugins",
                           "--enable-omemo",
-                          "--enable-omemo-qrcode",
                           "--enable-otr",
                           "--enable-pgp",
-                          "--enable-notifications",
                           "BREW=#{HOMEBREW_BREW_FILE}",
-                          *std_configure_args
+                          *std_configure_args.reject { |s| s["--disable-debug"] } 
     system "make", "install"
   end
 
