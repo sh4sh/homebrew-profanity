@@ -53,7 +53,7 @@ class ProfanityE2e < Formula
                           "--enable-otr",
                           "--enable-pgp",
                           "BREW=#{HOMEBREW_BREW_FILE}",
-                          *std_configure_args.reject { |s| s["--disable-debug"] } 
+                          *std_configure_args.reject { |s| s["--disable-debug"] }
     system "make", "install"
   end
 
